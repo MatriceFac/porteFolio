@@ -71,7 +71,7 @@ const Home = () => {
 
             <h1 className="text-5xl md:text-7xl font-bold leading-tight">
               <span className="block text-base-content">Bonjour, je suis</span>
-              <span className="gradient-text block">Matrice</span>
+              <span className="gradient-text block">TAGNE TALLA IDRISS</span>
             </h1>
 
             <div className="h-16">

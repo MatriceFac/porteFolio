@@ -140,14 +140,14 @@ const About = () => {
                 <div className="w-2 h-2 mt-2 rounded-full bg-accent group-hover:scale-150 transition-transform"></div>
                 <div>
                   <p className="font-medium">Master en Data Science</p>
-                  <p className="text-sm text-base-content/60">Université Paris-Saclay • 2020-2022</p>
+                  <p className="text-sm text-blue-500 text-base-content/60">Université de Yaoundé I • année en cours</p>
                 </div>
               </div>
               <div className="flex items-start space-x-3 group">
                 <div className="w-2 h-2 mt-2 rounded-full bg-primary group-hover:scale-150 transition-transform"></div>
                 <div>
                   <p className="font-medium">Licence en Informatique</p>
-                  <p className="text-sm text-base-content/60">Université Paris-Dauphine • 2017-2020</p>
+                  <p className="text-sm text-base-content/60">Université dE Yaoundé I • 2024-2025</p>
                 </div>
               </div>
             </div>

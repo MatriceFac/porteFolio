@@ -1,9 +1,14 @@
 import { useState } from 'react';
 import Title from './Title';
 import { Github, ExternalLink, Eye, Code, Sparkles } from 'lucide-react';
-import project1 from '../assets/i1.png';
-import project2 from '../assets/i2.png';
-import project3 from '../assets/i3.png';
+
+
+import project2 from '../assets/2.jpeg';
+import project4 from '../assets/4.jpeg';
+import project5 from '../assets/5.jpeg';
+import project6 from '../assets/6.jpeg';
+import project7 from '../assets/7.jpeg';
+import project8 from '../assets/8.jpeg';
 
 const Projects = () => {
   const [filter, setFilter] = useState('all');
@@ -12,50 +17,90 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: 'AI Task Manager',
-      description: 'Application de gestion de tâches avec recommandations IA pour optimiser la productivité.',
-      longDescription: 'Utilise TensorFlow.js pour analyser les habitudes de travail et suggérer des optimisations en temps réel.',
-      image: project1,
-      technologies: ['React', 'Node.js', 'TensorFlow.js', 'MongoDB'],
-      category: 'fullstack',
+      title: 'Amélioration de la Mobilité au Sénégal',
+      description: 'Application pour améiorer la mobilité au Sénégal avec un jeu de données disponible pour un challenge repondant a une problématique métier au Sénégal',
+      longDescription: 'Utilise l\'expertise et compétence en datascience pour fournir une solution face a la problématique soulever ',
+      image: project2,
+      technologies: ['Classe d\'algorithme', 'PowerBI', 'TensorFlow.js'],
+      category: 'Challenge',
       features: ['IA prédictive', 'Temps réel', 'Analytics'],
       demo: '#',
-      code: '#',
+      code: 'www.github/MatriceFac.com',
       stats: { views: 1200, likes: 45 }
     },
     {
       id: 2,
-      title: 'DataViz Platform',
-      description: 'Plateforme de visualisation de données interactive avec tableaux de bord personnalisables.',
-      longDescription: 'Créez des visualisations complexes à partir de sources de données multiples avec export en temps réel.',
-      image: project2,
-      technologies: ['D3.js', 'Python', 'Flask', 'PostgreSQL'],
-      category: 'dataviz',
-      features: ['Temps réel', 'Export PDF', 'API REST'],
+      title: 'Génération Automatique de Modèle ',
+      description: 'Plateforme d\'automatisation et de génération automatique de modèle ',
+      longDescription: 'Automatiser les processus de génération de modèle(réverse-ingenieurie et génération du code source).',
+      image: project7,
+      technologies: ['Flask', 'Python'],
+      category: 'AUTOMATISATION',
+      features: ['Temps réel', 'API REST'],
       demo: '#',
-      code: '#',
+      code: 'www.github/MatriceFac.com',
       stats: { views: 850, likes: 32 }
     },
     {
       id: 3,
-      title: 'EcoScore API',
-      description: "API d'analyse d'impact environnemental utilisant le machine learning.",
-      longDescription: "Évalue l'empreinte carbone des produits à partir de leurs caractéristiques avec des modèles ML avancés.",
-      image: project3,
-      technologies: ['FastAPI', 'Scikit-learn', 'Docker', 'AWS'],
-      category: 'ml',
+      title: 'Assistance Hospitalier',
+      description: 'Plateforme d\'assistance qui permet au malade d\'avoir des médécin assiter qui font des efférence sur leurs traitements et joue le rôle de médécin guide .',
+      longDescription: 'Ce faire assiter par une IA. La mise en place d\'une communication réel patient-malade-Tout ceci assiter par une IA ',
+      image: project4,
+      technologies: ['Modele d\'IA', 'FrontEnd-patient et Frontend Médécin', 'Auth',],
+      category: 'Machine_Learning',   
+      features: ['Temps réel', 'Export PDF', 'API REST'],
+      demo: '#',
+      code: 'www.github/MatriceFac.com',
+      stats: {}
+    },
+    {
+      id: 4,
+      title: 'Plate forme de parie sportif',
+      description: "API d'analyse d'impact sur les paries sportif et prédiction de score utilisant le machine learning.",
+      longDescription: "Évalue et fait des prédiction de score avec une partie explicabilité des résultats fournies à partir de leurs caractéristiques avec des modèles ML avancés.",
+      image: project8,
+      technologies: ['FastAPI', 'Scikit-learn', 'classe d\'algorithme de machine learning'],
+      category: 'Machine_Learning',
       features: ['ML Model', 'Scalable', 'Documentation'],
       demo: '#',
-      code: '#',
+      code: 'www.github/MatriceFac.com',
+      stats: { views: 650, likes: 28 }
+    },
+        {
+      id: 4,
+      title: 'Detection de Fraudes avec Néo4J',
+      description: "Détection de Fraude dans une banque local avec le logiciel Néo4j utilisant le machine learning.",
+      longDescription: "Évalue le profil des Fraudeurs et détecte automatiquement les fraudes dans un environnement distribuée sous forme de graphe à partir de leurs caractéristiques avec des modèles ML avancés.",
+      image: project5,
+      technologies: ['Néo4j', 'Scikit-learn', 'Docker', 'AWS'],
+      category: 'Challenge',
+      features: ['ML Model', 'Scalable', 'Documentation'],
+      demo: '#',
+      code: 'www.github/MatriceFac.com',
+      stats: { views: 650, likes: 28 }
+    },
+
+        {
+      id: 5,
+      title: 'Detection d\'objet et reconnaissance d\'image',
+      description: "Détection d\'image et reconnaissance de personne pour la conférence \'CRI|2025\' utilisant le machine learning.",
+      longDescription: "Projet de reconnaissance de visage donnant lieu à la reconnaissance de visage ré-utilisable en entreprise ou dans des projets de recheche.",
+      image: project6,
+      technologies: ['CNN', 'DESCRIPTEURS DE CARACTERISTICS'],
+      category: 'Challenge',
+      features: ['ML Model', 'Scalable', 'Documentation'],
+      demo: '#',
+      code: 'www.github/MatriceFac.com',
       stats: { views: 650, likes: 28 }
     }
   ];
 
   const categories = [
     { id: 'all', label: 'Tous', icon: <Sparkles className="w-4 h-4" /> },
-    { id: 'fullstack', label: 'Full Stack', icon: <Code className="w-4 h-4" /> },
-    { id: 'dataviz', label: 'Data Viz', icon: <Eye className="w-4 h-4" /> },
-    { id: 'ml', label: 'Machine Learning', icon: <Code className="w-4 h-4" /> }
+    { id: 'AUTOMATISATION', label: 'AUTOMATISATION', icon: <Code className="w-4 h-4" /> },
+    { id: 'Challenge', label: 'Challenge', icon: <Eye className="w-4 h-4" /> },
+    { id: 'Machine_Learning', label: 'Machine Learning', icon: <Code className="w-4 h-4" /> }
   ];
 
   const filteredProjects = filter === 'all' 
@@ -195,7 +240,7 @@ const Projects = () => {
         <p className="text-base-content/60">
           D'autres projets sont disponibles sur mon{' '}
           <a 
-            href="#" 
+            href="www.github/MatriceFac.com" 
             target="_blank" 
             rel="noopener"
             className="text-accent hover:underline font-medium"
